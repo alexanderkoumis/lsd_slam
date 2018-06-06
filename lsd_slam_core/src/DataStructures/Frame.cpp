@@ -118,6 +118,7 @@ Frame::~Frame()
 		FrameMemory::getInstance().returnBuffer(data.idepthVar[level]);
 	}
 
+	FrameMemory::getInstance().returnBuffer(data.imageRGB[0]);
 	FrameMemory::getInstance().returnBuffer((float*)data.validity_reAct);
 	FrameMemory::getInstance().returnBuffer(data.idepth_reAct);
 	FrameMemory::getInstance().returnBuffer(data.idepthVar_reAct);
